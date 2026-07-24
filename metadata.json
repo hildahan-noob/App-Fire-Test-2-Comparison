@@ -1,0 +1,6 @@
+{
+  "name": "Armacell Industrial Comparative Analytics",
+  "description": "Comparative Performance Analytics and Fire Standards Re-engineered Experience for Armacell Industrial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
