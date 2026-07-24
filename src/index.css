@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-primary: #4e6700;
+  --color-primary-container: #96c115;
+  --color-on-primary-container: #384b00;
+  --color-on-primary: #ffffff;
+  
+  --color-secondary: #006591;
+  --color-secondary-container: #4ebdff;
+  --color-on-secondary-container: #004a6c;
+  --color-on-secondary: #ffffff;
+
+  --color-tertiary: #5c5e67;
+  --color-on-tertiary: #ffffff;
+
+  --color-surface: #f7fafb;
+  --color-surface-dim: #d7dadb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f1f4f5;
+  --color-surface-container: #ebeeef;
+  --color-surface-container-high: #e6e9ea;
+  --color-surface-container-highest: #e0e3e4;
+
+  --color-on-surface: #181c1d;
+  --color-on-surface-variant: #444936;
+  --color-outline: #747964;
+  --color-outline-variant: #c4c9b0;
+}
+
+@keyframes ping-slow {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  75%, 100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+.animate-hotspot-ping {
+  animation: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
